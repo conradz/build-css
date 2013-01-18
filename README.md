@@ -1,7 +1,7 @@
 build-css
 =========
 
-Utility for building/minifying LESS and CSS files
+Helper for building/minifying LESS and CSS files
 
 This utility will build all `.less` files, concatenate all the files together,
 and the minify the source with
@@ -44,4 +44,10 @@ buildCSS([
     });
 });
 ```
+
+## Tests
+
+Test files are in the `test/` folder. Run `npm test` to run all the tests.
+Tests are written using [Mocha](http://visionmedia.github.com/mocha/) and
+[Chai](http://chaijs.com/).
 
