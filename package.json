@@ -1,0 +1,32 @@
+{
+  "name": "build-css",
+  "version": "0.0.1",
+  "description": "Helper for building/minifying LESS and CSS files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conradz/build-css.git"
+  },
+  "keywords": [
+    "css",
+    "less",
+    "build",
+    "minify",
+    "concatenate"
+  ],
+  "author": "Conrad Zimmerman",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "less": "*",
+    "clean-css": "*",
+    "async": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
