@@ -1,13 +1,11 @@
 build-css
 =========
 
-Helper for building/minifying LESS and CSS files
+Helper for building/minifying LESS and CSS files. It makes it super easy to
+compile LESS, concatenate all the CSS, and minify the output.
 
-This utility will build all `.less` files, concatenate all the files together,
-and the minify the source with
-[clean-css](https://github.com/GoalSmashers/clean-css).
-
-## Example
+Example
+-------
 
 ```js
 var buildCSS = require('build-css');
@@ -45,9 +43,29 @@ buildCSS([
 });
 ```
 
-## Tests
+Reference
+---------
 
-Test files are in the `test/` folder. Run `npm test` to run all the tests.
-Tests are written using [Mocha](http://visionmedia.github.com/mocha/) and
-[Chai](http://chaijs.com/).
+### `buildCSS(files, [opts], callback)`
 
+Builds an array of CSS/LESS files, concatenating and minifying them.
+
+`files` is an array of file paths to read. The order of the files is preserved
+when concatenating. If a file in `files` is a `.less` file, it will be compiled
+and the CSS output will be used.
+
+`opts` is an optional object containing the configuration settings. The
+`minify` option will disable minification when it is false. The `paths` option
+is an array of paths to look for the files imported by LESS `@import`s. The
+source file directory is always added to this when compiling.
+
+`callback` is a function that will be called with the result. It uses the
+normal Node callback signature of `(error, result)`.
+
+It uses [clean-css](https://github.com/GoalSmashers/clean-css) when minifying
+the CSS.
+
+License
+-------
+
+MIT License. See the `LICENSE` file.
