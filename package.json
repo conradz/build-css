@@ -1,6 +1,6 @@
 {
   "name": "build-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper for building/minifying LESS and CSS files",
   "main": "index.js",
   "scripts": {
