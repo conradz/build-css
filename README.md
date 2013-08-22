@@ -1,11 +1,14 @@
-build-css
-=========
+# build-css
+
+[![NPM](https://nodei.co/npm/build-css.png?compact=true)](https://nodei.co/npm/build-css/)
+
+[![Build Status](https://drone.io/github.com/conradz/build-css/status.png)](https://drone.io/github.com/conradz/build-css/latest)
+[![Dependency Status](https://gemnasium.com/conradz/build-css.png)](https://gemnasium.com/conradz/build-css)
 
 Helper for building/minifying LESS and CSS files. It makes it super easy to
 compile LESS, concatenate all the CSS, and minify the output.
 
-Example
--------
+## Example
 
 ```js
 var buildCSS = require('build-css');
@@ -43,8 +46,7 @@ buildCSS([
 });
 ```
 
-Reference
----------
+## Reference
 
 ### `buildCSS(files, [opts], callback)`
 
@@ -64,8 +66,3 @@ normal Node callback signature of `(error, result)`.
 
 It uses [clean-css](https://github.com/GoalSmashers/clean-css) when minifying
 the CSS.
-
-License
--------
-
-MIT License. See the `LICENSE` file.
