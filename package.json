@@ -16,7 +16,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "less": "~1.4.2",
-    "clean-css": "~1.0.12",
+    "clean-css": "~1.1.1",
     "async": "~0.2.9"
   },
   "devDependencies": {
