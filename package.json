@@ -15,8 +15,8 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "less": "~1.4.2",
-    "clean-css": "~1.1.1",
+    "less": "~1.5.0",
+    "clean-css": "~2.0.1",
     "async": "~0.2.9"
   },
   "devDependencies": {

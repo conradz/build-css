@@ -1,5 +1,5 @@
 var less = require('less'),
-    cleanCSS = require('clean-css').process,
+    CleanCSS = require('clean-css'),
     async = require('async'),
     fs = require('fs'),
     path = require('path');
@@ -24,7 +24,7 @@ function buildCSS(files, options, callback) {
 
             var src = files.join('\n');
             if (options.minify !== false) {
-                src = cleanCSS(src);
+                src = new CleanCSS().minify(src);
             }
             callback(null, src);
         });
