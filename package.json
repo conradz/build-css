@@ -1,6 +1,6 @@
 {
   "name": "build-css",
-  "version": "0.0.3",
+  "version": "0.0.3-amedia1",
   "description": "Helper for building/minifying LESS and CSS files",
   "main": "index.js",
   "scripts": {
